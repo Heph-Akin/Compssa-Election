@@ -28,7 +28,7 @@ write.csv(Total, "C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA-Election\\To
 
 #Selecting only useful data columns 
 Reg <-  select(Reg, Matriculation.number, Password)
-Votes <- select(Votes, -Timestamp, -Email.Address)
+
 
 
 

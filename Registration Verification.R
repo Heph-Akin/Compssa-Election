@@ -9,8 +9,8 @@ library(ggplot2)
 
 
 # Import registration Spreadsheet downloaded from Google sheets
-Compssa_list <-  read_excel("C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA_Election\\COMPSSA Student Database without duplicates.xlsx")
-Vote_reg <- read.csv("C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA_Election\\Voters List.csv")
+Compssa_list <-  read_excel("C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA-Election\\COMPSSA Student Database without duplicates.xlsx")
+Vote_reg <- read.csv("C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA-Election\\Voters List.csv")
 
 names(Compssa_list)[names(Compssa_list) == "Matriculation Number"] <- "Matriculation.number"
 
@@ -54,9 +54,9 @@ nrow(Valid_bio) - nrow(Valid_attend)
 
 
 # Export csv for Valid and Invalid Registrations
-write.csv(Valid_attend, "C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA_Election\\Valid Registrations.csv")
-write.csv(invalid_bio, "C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA_Election\\Invalid Registrations(Biodata).csv")
-write.csv(Invalid_attend, "C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA_Election\\Invalid Registrations(Attendance).csv")
+write.csv(Valid_attend, "C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA-Election\\Valid Registrations.csv")
+write.csv(invalid_bio, "C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA-Election\\Invalid Registrations(Biodata).csv")
+write.csv(Invalid_attend, "C:\\Users\\Hephzibah Akindele\\Documents\\COMPSSA-Election\\Invalid Registrations(Attendance).csv")
 
 
 
